@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashvin Shiyani | Software Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div id="loading-screen">
+    <div class="loader-inner">
+        <span class="loader-name">Ashvin Shiyani</span>
+        <div class="loader-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+</div>
+
+
+    <header id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">Ashvin</a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#project" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    <div class="nav-right">
+        <a href="https://raw.githubusercontent.com/Ashvin-Shiyani/Portfolio/main/Resume-Ashvin-Tech.pdf" download="Resume-Ashvin.pdf" target="_blank" class="nav-cv">Resume <i class="fa-solid fa-arrow-down"></i></a>
+        <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+    </div>
+</div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <p class="hero-tag"><span class="dot"></span> Open to internships &amp; opportunities</p>
+            <h1 class="hero-name">Hi, I'm<br><em>Ashvin Shiyani</em></h1>
+            <p class="hero-role"><span id="typed-role"></span><span class="cursor">|</span></p>
+            <p class="hero-desc">CS student at Acadia University building real things — web apps, Python tools, and everything in between.</p>
+            <div class="hero-btns">
+                <a href="#project" class="btn-primary">See My Work</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.com/users/740579244324945972" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/ashu_shiyani/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <img src="profilepic.jpeg" alt="Ashvin Shiyani">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-label">About Me</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Building things<br><em>that actually work</em></h2>
+                <p>I'm a Computer Science student at Acadia University in Wolfville, NS. Since 2023 I hit the ground running — picking up web development, Python, and systems programming along the way.</p>
+                <p>I care about writing clean code and solving real problems. Whether it's a real-time chat app or a Python game, I like seeing things come to life.</p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>BSc Computer Science — Acadia University</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Wolfville, Nova Scotia, Canada</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Available for internships</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skills">
+                <h3>Tech Stack</h3>
+                <div class="skill-group">
+                    <p class="skill-label">Languages</p>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>C</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-label">Tools &amp; Frameworks</p>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Socket.io</span>
+                        <span>Pygame</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-label">Currently Learning</p>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>SQL</span>
+                        <span>Data Structures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section class="projects" id="project">
+    <div class="section-label">Projects</div>
+    <h2>Things I've Built</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="project-banner chat-banner">
+                <i class="fa-solid fa-comments"></i>
+                <img src="livechat.jpeg" alt="Chat App Screenshot">
+                <span class="project-num">01</span>
+            </div>
+            <div class="project-body">
+                <h3>Real-Time Chat App</h3>
+                <p>Multi-user live chat using WebSockets. Users connect instantly and messages broadcast in real time — no refresh needed.</p>
+                <div class="project-tags">
+                    <span>Node.js</span>
+                    <span>Socket.io</span>
+                    <span>JavaScript</span>
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Ashvin-Shiyani/realtime-chat" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-banner game-banner">
+                <i class="fa-solid fa-rocket"></i>
+                <img src="alieninvasion.jpeg" alt="Game Screenshot">
+                <span class="project-num">02</span>
+            </div>
+            <div class="project-body">
+                <h3>Alien Invasion Game</h3>
+                <p>A Python shooting game where you pilot a ship and defend against waves of aliens. Built with Pygame using OOP principles.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Pygame</span>
+                    <span>OOP</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Ashvin-Shiyani/alien-invasion-game" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-banner finance-banner">
+                <i class="fa-solid fa-chart-line"></i>
+                <img src="finance.jpeg" alt="Finance Dashboard Screenshot">
+                <span class="project-num">03</span>
+            </div>
+            <div class="project-body">
+                <h3>Finance Dashboard</h3>
+                <p>A desktop app where you upload a CSV file and instantly get visual charts and financial insights. Built with Python and a local SQLite database.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>SQLite</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>CustomTkinter</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Ashvin-Shiyani/Finance-Dashboard" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <div class="section-label">Contact</div>
+        <h2>Let's Talk</h2>
+        <p class="contact-sub">I'm looking for internships and open to any interesting projects. My inbox is always open.</p>
+        <a href="mailto:ashvinshiyani10@icloud.com" class="contact-email">ashvinshiyani10@icloud.com</a>
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (782)-232-5287</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank">WhatsApp me</a>
+            </div>
+        </div>
+            <div class="contact-socials">
+            <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ashu_shiyani/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ashvin Shiyani</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
