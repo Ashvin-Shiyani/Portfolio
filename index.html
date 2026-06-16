@@ -12,166 +12,205 @@
 </head>
 <body>
 
+<canvas id="particle-canvas"></canvas>
+
 <div id="loading-screen">
     <div class="loader-inner">
         <span class="loader-name">Ashvin Shiyani</span>
-        <div class="loader-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-        </div>
+        <div class="loader-icon"><i class="fa-solid fa-laptop-code"></i></div>
         <div class="loader-bar"><div class="loader-fill"></div></div>
     </div>
 </div>
 
-
-    <header id="navbar">
-        <div class="nav-inner">
-            <a href="#home" class="nav-logo">Ashvin</a>
+<header id="navbar">
+    <div class="nav-inner">
+        <a href="#home" class="nav-logo">AS<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#project" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-    <div class="nav-right">
-        <a href="https://raw.githubusercontent.com/Ashvin-Shiyani/Portfolio/main/ResumeShiyani.pdf" download="Resume-Ashvin.pdf" target="_blank" class="nav-cv">Resume <i class="fa-solid fa-arrow-down"></i></a>
-        <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+        <div class="nav-right">
+            <a href="https://raw.githubusercontent.com/Ashvin-Shiyani/Portfolio/main/ResumeShiyani.pdf" download="Resume-Ashvin.pdf" target="_blank" class="nav-cv">Resume <i class="fa-solid fa-arrow-down"></i></a>
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-left">
+        <p class="hero-tag"><span class="dot"></span> Open to Fall 2026 Co-op</p>
+        <h1 class="hero-name">Hi, I'm<br><em data-text="Ashvin Shiyani">Ashvin Shiyani</em></h1>
+        <p class="hero-role"><span id="typed-role"></span><span class="cursor">|</span></p>
+
+<div class="terminal-card">
+    <div class="terminal-header">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-filename">ashvin.py</span>
+    </div>
+    <div class="terminal-body">
+        <span class="t-key">def</span> <span class="t-func">about</span>():<br>
+        &nbsp;&nbsp;<span class="t-var">name</span> <span class="t-op">=</span> <span class="t-str">"Ashvin Shiyani"</span><br>
+        &nbsp;&nbsp;<span class="t-var">university</span> <span class="t-op">=</span> <span class="t-str">"Acadia University"</span><br>
+        &nbsp;&nbsp;<span class="t-var">year</span> <span class="t-op">=</span> <span class="t-num">3</span><br>
+        &nbsp;&nbsp;<span class="t-var">specialization</span> <span class="t-op">=</span> {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-prop">"role"</span>: <span class="t-str">"Full-Stack Developer"</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-prop">"backend"</span>: [<span class="t-str">"Node.js"</span>, <span class="t-str">"Redis"</span>, <span class="t-str">"PostgreSQL"</span>],<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-prop">"frontend"</span>: [<span class="t-str">"React"</span>, <span class="t-str">"JavaScript"</span>]<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;<span class="t-var">status</span> <span class="t-op">=</span> <span class="t-str green-text">"Seeking Co-op"</span><br>
+        &nbsp;&nbsp;<span class="t-key">return</span> <span class="t-var">name</span>, <span class="t-var">specialization</span>
     </div>
 </div>
-    </header>
 
-    <section class="hero" id="home">
-        <div class="hero-left">
-            <p class="hero-tag"><span class="dot"></span> Open to internships &amp; opportunities</p>
-            <h1 class="hero-name">Hi, I'm<br><em>Ashvin Shiyani</em></h1>
-            <p class="hero-role"><span id="typed-role"></span><span class="cursor">|</span></p>
-            <p class="hero-desc">CS student at Acadia University building real things — web apps, Python tools, and everything in between.</p>
-            <div class="hero-btns">
-                <a href="#project" class="btn-primary">See My Work</a>
-                <a href="#contact" class="btn-secondary">Get in Touch</a>
-            </div>
-            <div class="hero-socials">
-                <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://discord.com/users/740579244324945972" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.instagram.com/ashu._0x0x/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+        <div class="hero-btns">
+            <a href="#project" class="btn-primary">See My Work</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
         </div>
-        <div class="hero-right">
-            <div class="hero-img-wrap">
-                <img src="profilepic.jpeg" alt="Ashvin Shiyani">
-            </div>
+        <div class="hero-socials">
+            <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.com/users/740579244324945972" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/ashu._0x0x/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
-    </section>
+    </div>
+    <div class="hero-right">
+        <div class="hero-img-wrap">
+            <img src="profilepic.jpg" alt="Ashvin Shiyani">
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-brands fa-node-js"></i> Node.js</div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-database"></i> Redis</div>
+        <div class="floating-badge badge-3"><i class="fa-brands fa-react"></i> React</div>
+    </div>
+</section>
+<section class="experience" id="experience">
+    <div style="text-align:center; margin-bottom:16px;">
+    <span class="section-label" style="display:inline-flex; align-items:center; background:var(--bg-card); border:1px solid var(--border); padding:6px 18px; border-radius:20px; margin-bottom:0;">Work Experience</span>
+</div>
+<h2 style="text-align:center; margin-left:auto; margin-right:auto;">My professional journey</h2>
+<p style="text-align:center; color:var(--text-muted); font-size:16px; margin-top:-32px; margin-bottom:48px;">across leading organizations</p>
 
-    <section class="about" id="about">
-        <div class="section-label">About Me</div>
-        <div class="about-grid">
-            <div class="about-text">
-                <h2>Building things<br><em>that actually work</em></h2>
-                <p>I'm a Computer Science student at Acadia University in Wolfville, NS. Since 2023 I hit the ground running — picking up web development, Python, and systems programming along the way.</p>
-                <p>I care about writing clean code and solving real problems. Whether it's a real-time chat app or a Python game, I like seeing things come to life.</p>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span>BSc Computer Science — Acadia University</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Wolfville, Nova Scotia, Canada</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span>Available for internships</span>
-                    </div>
+    <div class="experience-grid">
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <img src="acadia.svg" alt="Acadia University" class="exp-logo">
+                <div>
+                    <h3>Research Assistant</h3>
+                    <p class="exp-org">Acadia University</p>
                 </div>
             </div>
-            <div class="about-skills">
-                <h3>Tech Stack</h3>
-                <div class="skill-group">
-                    <p class="skill-label">Languages</p>
-                    <div class="skill-tags">
-                        <span>Python</span>
-                        <span>JavaScript</span>
-                        <span>Java</span>
-                        <span>C</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-              <div class="skill-group">
-    <p class="skill-label">Tools &amp; Frameworks</p>
-    <div class="skill-tags">
-        <span>Node.js</span>
-        <span>Socket.io</span>
-        <span>Pygame</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>VS Code</span>
-        <span>Express</span>
-        <span>Redis</span>
-        <span>PostgreSQL</span>
-        <span>React</span>
-    </div>
-</div>
-           <div class="skill-group">
-    <p class="skill-label">Currently Learning</p>
-    <div class="skill-tags">
-        <span>SQL</span>
-        <span>Data Structures</span>
-    </div>
-</div>
-            </div>
+            <p class="exp-date">Oct 2024 – Present · Wolfville, NS</p>
+            <ul class="exp-list">
+                <li>Built Python scripts to automate data collection and processing pipelines, reducing manual research time significantly</li>
+                <li>Designed and queried structured datasets from 160+ sources, applying the same database thinking used in backend development</li>
+                <li>Collaborated with peers using Git for version control on shared research code and analysis scripts</li>
+            </ul>
         </div>
-    </section>
 
-  <section class="projects" id="project">
+        <div class="exp-card">
+            <div class="exp-header">
+                <img src="acadia.svg" alt="Acadia University" class="exp-logo">
+                <div>
+                    <h3>Community Relations Representative</h3>
+                    <p class="exp-org">Acadia Students' Union</p>
+                </div>
+            </div>
+            <p class="exp-date">Jan 2026 – Present · Wolfville, NS</p>
+            <ul class="exp-list">
+                <li>Elected by peers to represent student interests in ASU council meetings, advocating for policy changes affecting 4,000+ students</li>
+                <li>Facilitate dialogue between Acadia students and Town of Wolfville officials, bridging student needs with community decision-making processes</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <img src="acadia.svg" alt="Acadia University" class="exp-logo">
+                <div>
+                    <h3>Campus Tour Ambassador</h3>
+                    <p class="exp-org">Acadia University</p>
+                </div>
+            </div>
+            <p class="exp-date">Sep 2025 – Present · Wolfville, NS</p>
+            <ul class="exp-list">
+                <li>Deliver guided tours to prospective students and families (up to 15 per session), communicating academic programs and campus culture to visitors from 10+ countries per semester</li>
+                <li>Represent the university's commitment to diversity and inclusion, adapting communication style for diverse cultural and academic backgrounds</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <img src="tims.jpg" alt="Tim Hortons" class="exp-logo">
+                <div>
+                    <h3>Shift Supervisor (Part-Time)</h3>
+                    <p class="exp-org">Tim Hortons</p>
+                </div>
+            </div>
+            <p class="exp-date">Promoted Jan 2026 · Wolfville, NS</p>
+            <ul class="exp-list">
+                <li>Promoted from team member to shift supervisor, overseeing daily operations and coordinating staff during shifts</li>
+                <li>Manage cash handling, inventory checks, and customer service standards while training new team members</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="projects" id="project">
     <div class="section-label">Projects</div>
     <h2>Things I've Built</h2>
     <div class="projects-grid">
+
+        <div class="project-card featured">
+            <div class="project-banner rate-banner">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span class="featured-badge">⭐ Featured</span>
+                <span class="project-num">01</span>
+            </div>
+            <div class="project-body">
+                <h3>Distributed Rate Limiter</h3>
+                <p>Production-ready microservice with JWT auth, three algorithms (Fixed Window, Sliding Window, Token Bucket), and atomic Lua scripting in Redis. React dashboard for API key management. Fully deployed.</p>
+                <div class="project-tags">
+                    <span class="tag-blue">Node.js</span>
+                    <span class="tag-red">Redis</span>
+                    <span class="tag-green">PostgreSQL</span>
+                    <span class="tag-cyan">React</span>
+                    <span class="tag-purple">JWT</span>
+                    <span class="tag-orange">Lua</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://rate-limiter-client.onrender.com" target="_blank" class="link-live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    <a href="https://github.com/Ashvin-Shiyani/rate-limiter-project" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
 
         <div class="project-card">
             <div class="project-banner chat-banner">
                 <i class="fa-solid fa-comments"></i>
                 <img src="livechat.jpeg" alt="Chat App Screenshot">
-                <span class="project-num">01</span>
+                <span class="project-num">02</span>
             </div>
             <div class="project-body">
                 <h3>Real-Time Chat App</h3>
-                <p>Multi-user live chat using WebSockets. Users connect instantly and messages broadcast in real time — no refresh needed.</p>
+                <p>Multi-user live chat using WebSockets. Messages broadcast in real time — no refresh needed. Built with event-driven architecture.</p>
                 <div class="project-tags">
-                    <span>Node.js</span>
-                    <span>Socket.io</span>
-                    <span>JavaScript</span>
-                    <span>HTML/CSS</span>
+                    <span class="tag-blue">Node.js</span>
+                    <span class="tag-orange">Socket.io</span>
+                    <span class="tag-yellow">JavaScript</span>
+                    <span class="tag-gray">HTML/CSS</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/Ashvin-Shiyani/realtime-chat" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
         </div>
-        <div class="project-card">
-    <div class="project-banner rate-banner">
-        <i class="fa-solid fa-shield-halved"></i>
-        <span class="project-num">02</span>
-    </div>
-    <div class="project-body">
-        <h3>Distributed Rate Limiter</h3>
-        <p>Production-ready rate limiting microservice with JWT auth, three algorithms (Fixed Window, Sliding Window, Token Bucket), and atomic Lua scripting in Redis. Includes a React dashboard to manage API keys and tiers.</p>
-        <div class="project-tags">
-            <span>Node.js</span>
-            <span>Redis</span>
-            <span>PostgreSQL</span>
-            <span>React</span>
-            <span>JWT</span>
-            <span>Lua</span>
-        </div>
-        <div class="project-links">
-            <a href="https://rate-limiter-client.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-            <a href="https://github.com/Ashvin-Shiyani/rate-limiter-project" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-    </div>
-</div>
-
 
         <div class="project-card">
             <div class="project-banner finance-banner">
@@ -181,51 +220,127 @@
             </div>
             <div class="project-body">
                 <h3>Finance Dashboard</h3>
-                <p>A desktop app where you upload a CSV file and instantly get visual charts and financial insights. Built with Python and a local SQLite database.</p>
+                <p>Desktop analytics tool — upload a CSV and instantly get visual charts and financial insights. Processes 10,000+ row datasets with Pandas.</p>
                 <div class="project-tags">
-                    <span>Python</span>
-                    <span>SQLite</span>
-                    <span>Pandas</span>
-                    <span>Matplotlib</span>
-                    <span>CustomTkinter</span>
+                    <span class="tag-blue">Python</span>
+                    <span class="tag-green">SQLite</span>
+                    <span class="tag-orange">Pandas</span>
+                    <span class="tag-purple">Matplotlib</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/Ashvin-Shiyani/Finance-Dashboard" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
         </div>
-        
 
     </div>
 </section>
 
-    <section class="contact" id="contact">
-        <div class="section-label">Contact</div>
-        <h2>Let's Talk</h2>
-        <p class="contact-sub">I'm looking for internships and open to any interesting projects. My inbox is always open.</p>
-        <a href="mailto:ashvinshiyani10@icloud.com" class="contact-email">ashvinshiyani10@icloud.com</a>
-        <div class="contact-details">
-            <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>+1 (782)-232-5287</span>
+<section class="skills-section" id="skills">
+    <div class="section-label">Skills</div>
+    <h2>Tech Stack</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-code skill-icon blue"></i>
+                <h3>Languages</h3>
             </div>
-            <div class="contact-item">
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank">WhatsApp me</a>
+            <div class="skill-tags">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">C</span>
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
             </div>
         </div>
-            <div class="contact-socials">
-            <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/ashu._0x0x/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-server skill-icon green"></i>
+                <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-pill green">Node.js</span>
+                <span class="skill-pill green">Express.js</span>
+                <span class="skill-pill green">REST APIs</span>
+                <span class="skill-pill green">JWT</span>
+                <span class="skill-pill green">bcrypt</span>
+            </div>
         </div>
-    </section>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-database skill-icon red"></i>
+                <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-pill red">PostgreSQL</span>
+                <span class="skill-pill red">Redis</span>
+                <span class="skill-pill red">SQLite</span>
+                <span class="skill-pill red">SQL</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-brands fa-react skill-icon cyan"></i>
+                <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-pill cyan">React</span>
+                <span class="skill-pill cyan">React Router</span>
+                <span class="skill-pill cyan">Axios</span>
+                <span class="skill-pill cyan">HTML/CSS</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-wrench skill-icon purple"></i>
+                <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-pill purple">Git</span>
+                <span class="skill-pill purple">GitHub</span>
+                <span class="skill-pill purple">VS Code</span>
+                <span class="skill-pill purple">Docker</span>
+                <span class="skill-pill purple">Linux</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-brain skill-icon orange"></i>
+                <h3>Concepts</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-pill orange">DSA</span>
+                <span class="skill-pill orange">OOP</span>
+                <span class="skill-pill orange">Rate Limiting</span>
+                <span class="skill-pill orange">WebSockets</span>
+                <span class="skill-pill orange">Distributed Systems</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Ashvin Shiyani</p>
-    </footer>
+<section class="contact" id="contact">
+    <div class="section-label">Contact</div>
+    <h2>Let's Talk</h2>
+    <p class="contact-sub">Looking for Fall 2026 co-op opportunities. My inbox is always open.</p>
+    <a href="mailto:ashvinshiyani10@icloud.com" class="contact-email">ashvinshiyani10@icloud.com</a>
+    <div class="contact-details">
+        <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+1 (782)-232-5287</span></div>
+        <div class="contact-item"><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank">WhatsApp me</a></div>
+    </div>
+    <div class="contact-socials">
+        <a href="https://github.com/Ashvin-Shiyani" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ashvin-shiyani-06a877229/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ashu._0x0x/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=17822325287" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</section>
 
-    <script src="portfolio.js"></script>
+<footer>
+    <p>&copy; 2026 Ashvin Shiyani</p>
+</footer>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
