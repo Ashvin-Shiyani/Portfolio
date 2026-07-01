@@ -1,8 +1,8 @@
 const canvas = document.getElementById('particle-canvas');
 const ctx = canvas.getContext('2d');
 let particles = [];
-const PARTICLE_COUNT = 90;
-const MAX_LINK_DIST = 150;
+const PARTICLE_COUNT = 55;
+const MAX_LINK_DIST = 130;
 
 function resizeCanvas() {
   canvas.width = window.innerWidth;
@@ -15,9 +15,9 @@ function createParticles() {
     particles.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4,
-      r: Math.random() * 2 + 1.5
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      r: Math.random() * 1 + 0.8
     });
   }
 }
@@ -34,9 +34,9 @@ function animateParticles() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(96, 165, 250, 0.9)';
-    ctx.shadowBlur = 8;
-    ctx.shadowColor = 'rgba(96, 165, 250, 0.8)';
+    ctx.fillStyle = 'rgba(96, 165, 250, 0.4)';
+    ctx.shadowBlur = 3;
+    ctx.shadowColor = 'rgba(96, 165, 250, 0.4)';
     ctx.fill();
   }
 
@@ -51,7 +51,7 @@ function animateParticles() {
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = `rgba(96, 165, 250, ${0.35 * (1 - dist / MAX_LINK_DIST)})`;
+        ctx.strokeStyle = `rgba(96, 165, 250, ${0.12 * (1 - dist / MAX_LINK_DIST)})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
