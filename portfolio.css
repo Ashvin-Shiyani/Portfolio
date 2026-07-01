@@ -95,53 +95,6 @@ section h2 em { font-style: italic; color: var(--accent); }
 .cursor { animation: blink 0.7s infinite; color: var(--accent); }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-.glitch {
-  position: relative;
-  display: inline-block;
-  animation: glitch-main 4s infinite;
-}
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-style: italic;
-}
-.glitch::before {
-  color: #ef4444;
-  animation: glitch-before 4s infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-}
-.glitch::after {
-  color: #06b6d4;
-  animation: glitch-after 4s infinite;
-  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
-}
-@keyframes glitch-main {
-  0%, 90%, 100% { transform: translate(0); }
-  92% { transform: translate(-2px, 1px); }
-  94% { transform: translate(2px, -1px); }
-  96% { transform: translate(-1px, 2px); }
-  98% { transform: translate(1px, -2px); }
-}
-@keyframes glitch-before {
-  0%, 90%, 100% { transform: translate(0); opacity: 0; }
-  92% { transform: translate(-4px, 0); opacity: 0.8; }
-  94% { transform: translate(4px, 0); opacity: 0.8; }
-  96% { transform: translate(-2px, 0); opacity: 0.6; }
-  98% { transform: translate(2px, 0); opacity: 0; }
-}
-@keyframes glitch-after {
-  0%, 90%, 100% { transform: translate(0); opacity: 0; }
-  92% { transform: translate(4px, 0); opacity: 0.8; }
-  94% { transform: translate(-4px, 0); opacity: 0.8; }
-  96% { transform: translate(2px, 0); opacity: 0.6; }
-  98% { transform: translate(-2px, 0); opacity: 0; }
-}
-
 .terminal-card {
   background: #0d1117;
   border: 1px solid #30363d;
@@ -150,7 +103,6 @@ section h2 em { font-style: italic; color: var(--accent); }
   margin-bottom: 32px;
   font-family: var(--font-mono);
   font-size: 14px;
-  animation: terminal-glitch 6s infinite;
 }
 
 .terminal-header { display: flex; align-items: center; gap: 6px; padding: 10px 16px; background: #161b22; border-bottom: 1px solid #30363d; }
@@ -235,6 +187,7 @@ section h2 em { font-style: italic; color: var(--accent); }
 .chat-banner { background: linear-gradient(135deg, #1e3a5f, #1e40af); color: #93c5fd; }
 .finance-banner { background: linear-gradient(135deg, #064e3b, #065f46); color: #6ee7b7; }
 .rate-banner { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #67e8f9; }
+.bi-banner { background: linear-gradient(135deg, #3b0764, #6d28d9); color: #d8b4fe; }
 .project-num { font-family: var(--font-mono); font-size: 13px; opacity: 0.5; align-self: flex-start; padding-top: 20px; }
 .featured-badge { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); background: rgba(59,130,246,0.2); border: 1px solid rgba(59,130,246,0.4); color: #93c5fd; font-size: 11px; font-family: var(--font-mono); padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
 .project-banner img { height: 100%; width: 45%; object-fit: cover; border-radius: 8px; opacity: 0.85; }
