@@ -4,51 +4,51 @@
 
 ---
 
-## ✨ About
+✨ About
 
-A clean, dark-themed personal portfolio built from scratch to showcase my projects, skills, and experience as a Computer Science student at Acadia University.
+A clean, dark-themed personal portfolio built from scratch to showcase my projects, skills, and experience as a Computer Science Co-op student at Acadia University.
 
----
 
-## 🚀 Features
+🚀 Features
 
-- 🌙 **Dark / Light mode toggle** — switch themes instantly from the navbar
-- ⌨️ **Typing animation** — dynamic role text in the hero section
-- 📱 **Fully responsive** — works on desktop, tablet, and mobile
-- ⚡ **Smooth scroll & animations** — scroll reveal and active nav highlighting
-- 💼 **Resume download** — one click PDF download from the navbar
-- 🔗 **Social links** — GitHub, LinkedIn, Discord, Instagram, WhatsApp with brand colors on hover
 
----
+🌙 Dark / Light mode toggle — switch themes instantly from the navbar
+⌨️ Typing animation — dynamic role text in the hero section
+🖥️ Particle canvas background — animated hero with a Python-syntax terminal card
+📱 Fully responsive — works on desktop, tablet, and mobile
+⚡ Smooth scroll & animations — scroll reveal and active nav highlighting
+💼 Resume download — one click PDF download from the navbar
+🔗 Social links — GitHub, LinkedIn, Discord, Instagram, WhatsApp with brand colors on hover
 
-## 🛠️ Built With
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling & animations |
-| JavaScript | Interactivity & typing effect |
-| Font Awesome 6 | Icons |
-| Google Fonts | DM Sans, DM Mono, Fraunces |
-| GitHub Pages | Hosting |
 
----
+🛠️ Built With
 
-## 📂 Projects Showcased
+TechnologyPurposeHTML5StructureCSS3Styling & animationsJavaScriptInteractivity, typing effect, particle canvasFont Awesome 6IconsGoogle FontsDM Sans, DM Mono, FrauncesGitHub PagesHosting
 
-### 💬 Real-Time Chat App
+
+📂 Projects Showcased
+
+⚙️ Distributed Rate Limiter
+
+A production-style rate limiting microservice supporting sliding window, token bucket, and fixed window algorithms — with a race condition fix using an atomic Lua script in Redis for correctness under concurrent load.
+Stack: Node.js, Express, PostgreSQL, Redis, React, JWT
+🔗 Live Demo · Repo
+
+📈 BI Platform
+
+A full-stack business intelligence platform for uploading data and generating visual insights, combining a Python analytics service with a modern web frontend.
+Stack: React (Vite), Node.js/Express, Python (FastAPI), PostgreSQL
+
+💬 Real-Time Chat App
+
 Multi-user live chat using WebSockets — messages broadcast instantly with no refresh needed.
-**Stack:** Node.js, Socket.io, JavaScript, HTML/CSS
+Stack: Node.js, Socket.io, JavaScript, HTML/CSS
 
-### 👾 Alien Invasion Game
-A shooting game built in Python where you pilot a ship and defend against waves of alien invaders.
-**Stack:** Python, Pygame, OOP
+📊 Finance Dashboard
 
-### 📊 Finance Dashboard
 A desktop app where you upload a CSV file and instantly get visual charts and financial insights.
-**Stack:** Python, SQLite, Pandas, Matplotlib, CustomTkinter
-
----
+Stack: Python, SQLite, Pandas, Matplotlib, CustomTkinter
 
 ## 📬 Contact
 
