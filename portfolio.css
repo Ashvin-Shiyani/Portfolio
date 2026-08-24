@@ -285,7 +285,7 @@ footer { border-top: 1px solid var(--border); text-align: center; padding: 24px;
 .experience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
 .exp-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: border-color 0.2s, transform 0.2s; }
 .exp-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.exp-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; }
+.exp-header { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; margin-bottom: 12px; }
 .exp-icon { font-size: 22px; margin-top: 2px; }
 .exp-icon.blue { color: var(--accent); }
 .exp-icon.green { color: var(--green); }
@@ -296,7 +296,7 @@ footer { border-top: 1px solid var(--border); text-align: center; padding: 24px;
 .exp-date { font-size: 12px; font-family: var(--font-mono); color: var(--accent); margin-bottom: 16px; }
 .exp-list { padding-left: 18px; }
 .exp-list li { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.6; }
-.exp-logo { width: 40px; height: 40px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; flex-shrink: 0; }
+.exp-logo { width: 64px; height: 64px; object-fit: contain; border-radius: 8px; background: #fff; padding: 6px; flex-shrink: 0; }
 .t-func { color: #d2a8ff; }
 
 .experience .section-label,
